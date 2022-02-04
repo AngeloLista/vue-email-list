@@ -12,7 +12,11 @@
 </head>
 <body>
     <div id="root">
-
+        <ul v-show="emails.length">
+            <li v-for="email in emails">
+                 {{ email }}
+            </li>
+        </ul>
     </div>
     
     <script src="js/script.js"></script>
