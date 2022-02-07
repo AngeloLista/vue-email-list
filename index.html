@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="root">
-        <ul v-show="emails.length">
+        <ul v-if="emails.length === 10" v-show="emails.length">
             <li v-for="email in emails">
                  {{ email }}
             </li>
